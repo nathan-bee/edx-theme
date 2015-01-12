@@ -1,21 +1,3 @@
-<%! from django.utils.translation import ugettext as _ %>
-
-<%! from django.core.urlresolvers import reverse %>
-<%inherit file="main.html" />
-<%namespace name='static' file='static_content.html'/>
-
-<%! from microsite_configuration import microsite %>
-
-<%
-  homepage_overlay_html = microsite.get_value('homepage_overlay_html')
-
-  show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', True)
-  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "XNaiOGxWeto")
-
-  show_partners = microsite.get_value('show_partners', True)
-
-%>
-
 <section class="home">
   <header>
     <div class="outer-wrapper">
@@ -96,21 +78,3 @@
     <iframe width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
-
-<%block name="js_extra">
-   <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
-</%block>
-
-% if show_signup_immediately is not UNDEFINED:
-  ## NOTE: This won't work in production, because anonymous views are cached, so it will
-  ## show either with or without this extra js for 3 minutes at a time.
-<script type="text/javascript">
-  $(window).load(function() {$('#signup_action').trigger("click");});
-</script>
-% endif
