@@ -10,7 +10,7 @@ header.global-new .nav-global li a, header.global-new .nav-courseware li a {
     font-size: 18px;
     font-weight: 600;
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
-    color: black;
+    color: white;
 }
 
 header.global-new {
@@ -118,10 +118,10 @@ $site-status-color: $bg-color;
 $header-graphic-super-color: $dark-color;
 $header-graphic-sub-color: $lighter-base-font-color;
 
-$header-link-color: black;
-$header-link-hover: $light-color;
+$header-link-color: white;
+$header-link-hover: white;
 
-$button-color: $main-color;
+$button-color: #B5152B;
 $button-archive-color: $gray-3;
 
 $shadow-color: $gray;
@@ -164,9 +164,9 @@ $action-secondary-focused-fg: $gray;
 
 // current or active navigation item
 $action-secondary-active-bg: $secondary-50;
-$action-secondary-active-fg: $gray;
+$action-secondary-active-fg: white;
 $action-secondary-active-shadow: none;
-$action-secondary-active-focused-fg: $gray-75;
+$action-secondary-active-focused-fg: white;
 $action-secondary-active-focused-shadow: none;
 
 // disabled
