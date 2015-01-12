@@ -1,3 +1,32 @@
+#hm-header {
+	height: 10px;
+	background-color: #B5152B;
+}
+
+header.global-new .nav-global li a, header.global-new .nav-courseware li a {
+    border-bottom: 4px solid #FFF;
+    display: block;
+    padding: 5px 5px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    color: black;
+}
+
+header.global-new {
+    border-bottom: 4px solid white;
+}
+
+.home > header .outer-wrapper {
+	padding-top: 60px !important;
+}
+
+.home > header {
+
+    height: 250px !important;
+}
+
+
 /****************************************************************************************************
 *   Stanford Theming File
 *
@@ -11,14 +40,14 @@
 
 //Main Color Variables
 $main-color: #f7691f;
-$dark-color: #ea281f; //Link Color
+$dark-color: black; //Link Color
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Main BG Color Variables
 $main-bg: #822537;
-$main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
-$main-bg-25: lighten($main-bg, 25%); 
+$main-bg-60: white; //Main Border/HR Color
+$main-bg-25: white; 
 
 //Secondary Color Variables
 $secondary: #b5a4b7;
@@ -57,16 +86,16 @@ $serif: $theme-serif-font, $serif;
 //  Theme Element Assignments
 //-----------------
 
-$body-bg: $gray-1;
-$container-bg: $gray-1;
-$login-register-bg: $gray-1;
-$content-wrapper-bg: $gray-1;
+$body-bg: white;
+$container-bg: white;
+$login-register-bg: white;
+$content-wrapper-bg: white;
 $header-image: none;
-$header-bg: transparentize(lighten($secondary, 18.5%), .25);
+$header-bg: white;
 $courseware-header-image: none;
-$courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
-$footer-bg: $secondary-25;
-$courseware-footer-border: 1px solid $main-bg-60;
+$courseware-header-bg: white;
+$footer-bg: white;
+$courseware-footer-border: 1px solid white;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
 $courseware-footer-margin: 50px;
 
@@ -81,15 +110,15 @@ $base-font-color: $black;
 $lighter-base-font-color: $black-80;
 $very-light-text: $gray-1;
 
-$link-color: $dark-color;
-$link-color-d1: $dark-color;
-$link-hover: $light-color;
+$link-color: black;
+$link-color-d1: black;
+$link-hover: black;
 $site-status-color: $bg-color;
 
 $header-graphic-super-color: $dark-color;
 $header-graphic-sub-color: $lighter-base-font-color;
 
-$header-link-color: $dark-color;
+$header-link-color: black;
 $header-link-hover: $light-color;
 
 $button-color: $main-color;
@@ -146,10 +175,10 @@ $action-secondary-disabled-fg: $gray;
 
 //
 
-$border-color-1: $main-bg-60;
-$border-color-2: $main-bg-60;
-$border-color-3: $main-bg-60;
-$outer-border-color: $main-bg-60;
+$border-color-1: white;
+$border-color-2: white;
+$border-color-3: white;
+$outer-border-color: white;
 
 $sidebar-color: $gray-1;
 
@@ -177,7 +206,7 @@ $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
 //TOP HEADER IMAGE MARGIN
-$header_image_margin: -77px;
+$header_image_margin: 0px;
 
 //FOOTER MARGIN
 $footer_margin: ($baseline/4) 0;
@@ -185,12 +214,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/default/images/sunrise.jpg');
+$homepage-bg-image: none;
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: '../themes/default/images/edx.png';
+$video-thumb-url: 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_University_of_Heidelberg.svg/220px-Logo_University_of_Heidelberg.svg.png';
 
 //-----------------
 //  Mixin Styles

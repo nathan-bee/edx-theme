@@ -3,8 +3,15 @@
 <%namespace name='static' file='/static_content.html'/>
 <%inherit file="/navigation.html"/>
 
-## TODO: this will eventually be moved to the Sass
+
+<%block name="navigation_top">
+  <div id="hm-header">
+
+  </div>
+</%block>
+
+
 <%block name="navigation_logo">
-  <img src="${static.url('themes/default/images/OpenEdXLogo.png')}" height="50" alt="Home Page" />
+  <img src="http://www.uni-heidelberg.de/md/zentral/startseite/logo_neu_204x107.jpg" height="60" alt="Home Page" />
 </%block>
 
