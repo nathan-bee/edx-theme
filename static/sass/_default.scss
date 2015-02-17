@@ -90,6 +90,19 @@ header.search {
     margin: 1em 25px;
 }
 
+.courses .course header.course-preview {
+    top: 180px;
+    height: 20px;
+    background-image: red;
+}
+
+.courses .course header.course-preview hgroup h2 {
+    height: 20px;
+}
+
+.courses .course header.course-preview .info-link h2 {
+    height: 20px;
+}
 
 //Changed Variables
 $body-bg: white;
