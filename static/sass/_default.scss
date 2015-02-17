@@ -97,8 +97,10 @@ header.search {
     background: $heiRed;
 }
 
+//Link bar of course item (normal)
 .highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2 {
     height: 20px;
+    color: white;
 }
 
 .highlighted-courses .courses .course header.course-preview .info-link h2, .find-courses .courses .course header.course-preview .info-link h2 {
@@ -130,6 +132,43 @@ header.search {
 .highlighted-courses .courses .course:hover .info, .highlighted-courses .courses .course:focus .info, .find-courses .courses .course:hover .info, .find-courses .courses .course:focus .info {
     top: -200px;
 }
+
+
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc {
+    box-sizing: border-box;
+    height: 150px;
+    overflow: hidden;
+    padding: 10px 10px 12px;
+    position: relative;
+    width: 100%;
+}
+
+
+//Outside box of course items (borders, shadows etc.)
+.highlighted-courses .courses .course, .find-courses .courses .course {
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #C83D58;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(255, 255, 255, 0.9) inset;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    transition: all 0.15s linear 0s;
+}
+
+
+//Link bar of the course item (hover, focus)
+.highlighted-courses .courses .course header.course-preview:hover, .highlighted-courses .courses .course header.course-preview:focus, .find-courses .courses .course header.course-preview:hover, .find-courses .courses .course header.course-preview:focus {
+    background-image: none;
+    background: $heiRed;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 
 //Changed Variables
