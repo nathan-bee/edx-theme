@@ -177,11 +177,13 @@ header.search {
 .highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2 {
     height: 20px;
     color: white;
+    text-shadow: none;
 }
 
 //Text Container Link bar course number
 .highlighted-courses .courses .course header.course-preview hgroup h2 .course-number, .find-courses .courses .course header.course-preview hgroup h2 .course-number{
     color: white;
+    text-shadow: none;
 }
 
 //Text Container Link bar course number (hover)
