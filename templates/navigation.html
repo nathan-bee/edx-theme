@@ -55,9 +55,28 @@ site_status_msg = get_site_status_msg(course_id)
       <%block name="navigation_global_links_authenticated">
         % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
           <li class="nav-global-01">
-            <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
+            <a href="${marketing_link('COURSES')}">${_('Courses')}</a>
+          </li>
+          <li class="nav-global-04 nav-seperator">
+            |
           </li>
         % endif
+          
+          <li class="nav-global-04">
+            <a href="/about">${_("About")}</a>
+          <li class="nav-global-04 nav-seperator">
+            |
+          </li>
+          </li>
+          <li class="nav-global-04">
+            <a href="/contact">${_("Contact")}</a>
+          <li class="nav-global-04 nav-seperator">
+            |
+          </li>
+          </li>
+          <li class="nav-global-04">
+            <a target="_blank" href="http://www.uni-heidelberg.de">${_("Uni Heidelberg")}</a>
+          </li>
         %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
           <li>
             <a href="${reverse('sysadmin')}">Sysadmin</a>
