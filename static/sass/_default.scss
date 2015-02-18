@@ -1,6 +1,9 @@
 //HeiMOOC Variables
 $heiRed: #C0091B;
 
+//
+//HEADER
+//
 
 header.global {
     border-bottom: 1px solid $heiRed;
@@ -46,7 +49,11 @@ header.global .nav-seperator {
         font-size: 1.5em !important;
 }
 
-//kann nicht so bleiben (.container). Muss auf die Startseite begrenzt werden.
+//
+// HOME AND COURSES (UNAUTHENTICATED)
+//
+
+//Background image 
 .courses {
     background-image: url("http://www.collegium-musicum.uni-hd.de/Bilder/index/Uni-Siegel.gif");
     min-height: 500px;
@@ -55,18 +62,25 @@ header.global .nav-seperator {
     background-attachment: scroll;
 }
 
+//Welcome screen courses
 header.search {
     display: none;
+    background-image: none;
+    background-color: white;
+    border-bottom: none;
+    box-shadow: none;
+    height: 0;
+
 }
 
+//Welcome screen home
 .home > header {
     display: none;
-}
-
-.wrapper-footer {
-    background: none repeat scroll 0% 0% white;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
-    border-top: 0px solid #C4C5C7;
+    background-image: none;
+    background-color: white;
+    border-bottom: none;
+    box-shadow: none;
+    height: 0;
 }
 
 .content-wrapper {
@@ -80,6 +94,16 @@ header.search {
     background: none repeat scroll 0% 0% white;
 }
 
+//
+//FOOTER
+//
+
+.wrapper-footer {
+    background: none repeat scroll 0% 0% white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-top: 0px solid #C4C5C7;
+}
+
 .footer-hr {
     border-width: 2px 0px 0px;
     border-color: $heiRed -moz-use-text-color -moz-use-text-color;
@@ -90,7 +114,44 @@ header.search {
     margin: 1em 25px;
 }
 
-//Link bar of the course item (normal)
+//
+// COURSE ITEM
+//
+
+//Outside box (borders, shadows etc.)
+.highlighted-courses .courses .course, .find-courses .courses .course {
+    background: none repeat scroll 0% 0% white;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(255, 255, 255, 0.9) inset;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    transition: all 0.15s linear 0s;
+}
+
+//Box for course image and description (normal)
+.highlighted-courses .courses .course .info, .find-courses .courses .course .info {
+    height: 380px;
+}
+
+//Box for course image and description (hover)
+.highlighted-courses .courses .course:hover .info, .highlighted-courses .courses .course:focus .info, .find-courses .courses .course:hover .info, .find-courses .courses .course:focus .info {
+    top: -200px;
+}
+
+//Text box for course description
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc {
+    box-sizing: border-box;
+    height: 150px;
+    overflow: hidden;
+    padding: 10px 10px 12px;
+    position: relative;
+    width: 100%;
+}
+
+//Link bar box (normal)
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview {
     top: 180px;
     height: 20px;
@@ -99,29 +160,31 @@ header.search {
     border: 2px solid white;
 }
 
-//Text Container Link bar of course item (normal)
+//Link bar box (hover, focus)
+.highlighted-courses .courses .course header.course-preview:hover, .highlighted-courses .courses .course header.course-preview:focus, .find-courses .courses .course header.course-preview:hover, .find-courses .courses .course header.course-preview:focus {
+    background-image: none;
+    background: $heiRed;
+    text-decoration: none;
+    color: white;
+}
+
+//Text Container Link bar (normal)
 .highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2 {
     height: 20px;
     color: white;
 }
 
-//Text Container Link bar of course item (hover)
-.highlighted-courses .courses .course header.course-preview:hover h2, .highlighted-courses .courses .course header.course-preview:focus h2, .find-courses .courses .course header.course-preview:hover h2, .find-courses .courses .course header.course-preview:focus h2 {
-color: white;
-}
-
-//Text Container course number Link bar of course item
+//Text Container Link bar course number
 .highlighted-courses .courses .course header.course-preview hgroup h2 .course-number, .find-courses .courses .course header.course-preview hgroup h2 .course-number{
     color: white;
 }
 
-//Text Container Link bar arrow of course item
-.highlighted-courses .courses .course header.course-preview .info-link h2, .find-courses .courses .course header.course-preview .info-link h2 {
-    height: 20px;
-    color: white;
+//Text Container Link bar course number (hover)
+.highlighted-courses .courses .course header.course-preview:hover h2, .highlighted-courses .courses .course header.course-preview:focus h2, .find-courses .courses .course header.course-preview:hover h2, .find-courses .courses .course header.course-preview:focus h2 {
+color: white;
 }
 
-//Link bar arrow of course item
+//Link bar arrow box
 .highlighted-courses .courses .course header.course-preview .info-link, .find-courses .courses .course header.course-preview .info-link {
     border-left: 1px solid rgba(150, 150, 150, 0.5);
     box-sizing: border-box;
@@ -140,53 +203,16 @@ color: white;
     vertical-align: middle;
 }
 
-.highlighted-courses .courses .course .info, .find-courses .courses .course .info {
-    height: 380px;
-}
-
-.highlighted-courses .courses .course:hover .info, .highlighted-courses .courses .course:focus .info, .find-courses .courses .course:hover .info, .find-courses .courses .course:focus .info {
-    top: -200px;
-}
-
-
-.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc {
-    box-sizing: border-box;
-    height: 150px;
-    overflow: hidden;
-    padding: 10px 10px 12px;
-    position: relative;
-    width: 100%;
-}
-
-
-//Outside box of course items (borders, shadows etc.)
-.highlighted-courses .courses .course, .find-courses .courses .course {
-    background: none repeat scroll 0% 0% #FFF;
-    border: none;
-    border-radius: 2px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(255, 255, 255, 0.9) inset;
-    margin-bottom: 30px;
-    position: relative;
-    width: 100%;
-    transition: all 0.15s linear 0s;
-}
-
-
-//Link bar of the course item (hover, focus)
-.highlighted-courses .courses .course header.course-preview:hover, .highlighted-courses .courses .course header.course-preview:focus, .find-courses .courses .course header.course-preview:hover, .find-courses .courses .course header.course-preview:focus {
-    background-image: none;
-    background: $heiRed;
-    text-decoration: none;
+//Link bar arrow text
+.highlighted-courses .courses .course header.course-preview .info-link h2, .find-courses .courses .course header.course-preview .info-link h2 {
+    height: 20px;
     color: white;
 }
 
 
-
-
-
-
+//
 //Changed Variables
+//
 $body-bg: white;
 
 /****************************************************************************************************
