@@ -1,5 +1,15 @@
 //HeiMOOC Variables
-$heiRed: #C0091B;
+$heiRed: #b5152b;
+$heiBeige: #f4flea;
+$heiLightGrey: #cccccc;
+$heiDarkGrey: #666666;
+
+//
+//FONTS
+//
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Domine:700);
 
 //
 //HEADER
@@ -55,7 +65,7 @@ header.global .nav-seperator {
 
 //Background image 
 .courses {
-    background-image: url("http://www.collegium-musicum.uni-hd.de/Bilder/index/Uni-Siegel.gif");
+    background-image: "/images/MOOC_Background_seal_image.png";
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -228,7 +238,21 @@ color: white;
 //
 //Changed Variables
 //
+
+//Background
 $body-bg: white;
+
+//Font
+$theme-sans-font: 'Lato';
+$sans-serif: $theme-sans-font, $sans-serif;
+$body-font-family: $sans-serif;
+$theme-serif-font: 'Domine';
+$serif: $theme-serif-font, $serif;
+
+
+
+
+
 
 /****************************************************************************************************
 * Stanford Theming File
@@ -262,13 +286,13 @@ $white: $gray-1;
 $black: #2e2e2e;
 $black-80: #585858;
 //-----------------
-// Font Assignment
+// Font Assignment (assigned above)
 //-----------------
-$theme-sans-font: 'Source Sans';
-$sans-serif: $theme-sans-font, $sans-serif;
-$body-font-family: $sans-serif;
-$theme-serif-font: 'Crimson Text';
-$serif: $theme-serif-font, $serif;
+//$theme-sans-font: 'Source Sans';
+//$sans-serif: $theme-sans-font, $sans-serif;
+//$body-font-family: $sans-serif;
+//$theme-serif-font: 'Crimson Text';
+//$serif: $theme-serif-font, $serif;
 //-----------------
 // Theme Element Assignments
 //-----------------
