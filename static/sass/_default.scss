@@ -345,6 +345,22 @@ text-align: center;
     border-bottom: none;
 }
 
+//Sidebar important-dates table
+.course-info .course-sidebar .important-dates {
+    width: 100%;
+}
+
+.important-dates-item td {
+    width: 50%;
+    margin 0 3px;
+}
+
+.important-dates-item .left {
+    text-align: right;
+}
+
+
+
 /****************************************************************************************************
 * Stanford Theming File
 *
