@@ -1,14 +1,31 @@
+//
 //HeiMOOC Variables
+//
+
+//Colour
 $heiRed: #b5152b;
 $heiBeige: #f4flea;
 $heiLightGrey: #cccccc;
 $heiDarkGrey: #666666;
 
+//Background
+$body-bg: white;
+
+//Font
+$theme-sans-font: 'Lato';
+$sans-serif: $theme-sans-font, $sans-serif;
+$body-font-family: $sans-serif;
+$theme-serif-font: 'Domine';
+$serif: $theme-serif-font, $serif;
+
 //
-//FONTS
+//FONT IMPORTS
 //
 
+//Sans-Serif (Lato)
 @import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
+
+//Serif (Domine)
 @import url(http://fonts.googleapis.com/css?family=Domine:700);
 
 //
@@ -65,7 +82,7 @@ header.global .nav-seperator {
 
 //Background image 
 .courses {
-    background-image: "/images/MOOC_Background_seal_image.png";
+    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -231,24 +248,6 @@ color: white;
 //
 
 //
-
-
-
-
-//
-//Changed Variables
-//
-
-//Background
-$body-bg: white;
-
-//Font
-$theme-sans-font: 'Lato';
-$sans-serif: $theme-sans-font, $sans-serif;
-$body-font-family: $sans-serif;
-$theme-serif-font: 'Domine';
-$serif: $theme-serif-font, $serif;
-
 
 
 
