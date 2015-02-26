@@ -80,10 +80,21 @@ header.global .nav-seperator {
 // HOME AND COURSES (UNAUTHENTICATED)
 //
 
-//Background image 
-.courses {
+//Background image home
+.highlighted-courses .courses {
     background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
-    min-height: 500px;
+    background-size: 950px auto;
+    min-height: 520px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+//Background image courses
+.find-courses .courses {
+    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-size: 950px auto;
+    min-height: 730px;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -110,11 +121,17 @@ header.search {
     height: 0;
 }
 
+//Home main courses container
+.home .highlighted-courses {
+    margin-bottom: 0;
+}
+
+//Main Background
 .content-wrapper {
     width: 100%;
     margin: 0px auto;
     background: none repeat scroll 0% 0% white !important;
-    padding-bottom: 0px;
+    padding-bottom: 0px !important;
 }
 
 .find-courses {
