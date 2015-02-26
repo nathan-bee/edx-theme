@@ -290,7 +290,7 @@ color: white;
 
 .heiButton {
 background-color: $heiRed;
-color: white;
+color: white !important;
 text-decoration: none;
 box-sizing: border-box;
 display: block;
@@ -298,6 +298,47 @@ padding: 10px 0px;
 text-align: center;
 }
 
+//course name and share buttons
+.heiCourseName {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+//share links
+.social-sharing {
+    display: flex;
+}
+
+.share {
+    margin: 0 3px;
+    color: $heiDarkGrey !important;
+}
+
+.sharing-message {
+    margin: 0 3px;
+    color: $heiDarkGrey !important;
+}
+
+//course profile
+.heiCourseProfile {
+    display: flex;
+}
+
+//borders
+.course-info .details {
+    border-right: 2px solid $heiRed;
+}
+
+.course-info .course-sidebar {
+    width: 31%;
+}
+
+.course-info .course-sidebar > section {
+    box-shadow: none;
+    border-bottom: 2px solid $heiRed;
+}
 /****************************************************************************************************
 * Stanford Theming File
 *
