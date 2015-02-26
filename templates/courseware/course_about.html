@@ -204,7 +204,7 @@ from edxmako.shortcuts import marketing_link
         % if get_course_about_section(course, "video"):
           <a href="#video-modal" class="media" rel="leanModal">
             <div class="hero">
-              <img src="http://placehold.it/375x200" alt="" />
+              <img src="http://placehold.it/320x200" alt="" />
               <div class="play-intro"></div>
             </div>
           </a>          
@@ -218,61 +218,82 @@ from edxmako.shortcuts import marketing_link
 
     <section class="course-sidebar">
       <section class="course-summary">
-        <ol class="important-dates">
-          <li class="important-dates-item"><i class="icon fa fa-info-sign"></i><p class="important-dates-item-title">${_("Course Number")}</p><span class="important-dates-item-text course-number">${course.display_number_with_default | h}</span></li>
+        <table class="important-dates">
+
+          <tr class="important-dates-item">
+            <td><p class="important-dates-item-title">${_("Course Number")}</p></td>
+            <td><span class="important-dates-item-text course-number">${course.display_number_with_default | h}</span></td>
+          </tr>
+
           % if not course.start_date_is_still_default:
-            <li class="important-dates-item"><i class="icon fa fa-calendar"></i><p class="important-dates-item-title">${_("Classes Start")}</p><span class="important-dates-item-text start-date">${course.start_datetime_text()}</span></li>
+            <tr class="important-dates-item">
+              <td><p class="important-dates-item-title">${_("Classes Start")}</p></td>
+              <td><span class="important-dates-item-text start-date">${course.start_datetime_text()}</span></td>
+            </tr>
+
           % endif
+
             ## We plan to ditch end_date (which is not stored in course metadata),
             ## but for backwards compatibility, show about/end_date blob if it exists.
-            % if get_course_about_section(course, "end_date") or course.end:
-            <li class="important-dates-item">
-                <i class="icon fa fa-calendar"></i>
-                <p class="important-dates-item-title">${_("Classes End")}</p>
-                <span class="important-dates-item-text final-date">
+            
+          % if get_course_about_section(course, "end_date") or course.end:
+            <tr class="important-dates-item">
+              <td><p class="important-dates-item-title">${_("Classes End")}</p></td>
+              <td><span class="important-dates-item-text final-date">
                     % if get_course_about_section(course, "end_date"):
                         ${get_course_about_section(course, "end_date")}
                     % else:
                         ${course.end_datetime_text()}
                     % endif
-                </span>
-            </li>
+              </span></td>
+            </tr>
+            
             % endif
 
           % if get_course_about_section(course, "effort"):
-            <li class="important-dates-item"><i class="icon fa fa-pencil"></i><p class="important-dates-item-title">${_("Estimated Effort")}</p><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")}</span></li>
+            <tr class="important-dates-item">
+              <td><p class="important-dates-item-title">${_("Estimated Effort")}</p></td>
+              <td><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")}</span></td>
+            </tr>
+
           % endif
 
           ##<li class="important-dates-item"><i class="icon fa fa-clock-o"></i><p class="important-dates-item-title">${_('Course Length')}</p><span class="important-dates-item-text course-length">${_('{number} weeks').format(number=15)}</span></li>
 
           %if course_price and (is_shopping_cart_enabled or is_cosmetic_price_enabled):
-            <li class="important-dates-item">
-              <i class="icon fa fa-money"></i>
-              <p class="important-dates-item-title">${_("Price")}</p>
-              <span class="important-dates-item-text">${course_price}</span>
-            </li>
+            <tr class="important-dates-item">
+              <td><p class="important-dates-item-title">${_("Price")}</p></td>
+              <td><span class="important-dates-item-text">${course_price}</span></td>
+            </tr>
+
           %endif
 
           % if pre_requisite_courses:
           <% prc_target = reverse('about_course', args=[unicode(pre_requisite_courses[0]['key'])]) %>
-          <li class="prerequisite-course important-dates-item">
-            <i class="icon fa fa-list-ul"></i>
+          
+          <tr class="prerequisite-course important-dates-item">
             <p class="important-dates-item-title">${_("Prerequisites")}</p>
             ## Multiple pre-requisite courses are not supported on frontend that's why we are pulling first element
-            <span class="important-dates-item-text pre-requisite"><a href="${prc_target}">${pre_requisite_courses[0]['display']}</a></span>
-            <p class="tip">
+            <td><span class="important-dates-item-text pre-requisite"><a href="${prc_target}">${pre_requisite_courses[0]['display']}</a></span></td>
+            <td><p class="tip">
             ${_("You must successfully complete {link_start}{prc_display}{link_end} before you begin this course.").format(
               link_start='<a href="{}">'.format(prc_target),
               link_end='</a>',
               prc_display=pre_requisite_courses[0]['display'],
             )}
-            </p>
-          </li>
+            </p></td>
+          </tr>
+
           % endif
+
           % if get_course_about_section(course, "prerequisites"):
-            <li class="important-dates-item"><i class="icon fa fa-book"></i><p class="important-dates-item-title">${_("Requirements")}</p><span class="important-dates-item-text prerequisites">${get_course_about_section(course, "prerequisites")}</span></li>
+            <tr class="important-dates-item">
+              <td><p class="important-dates-item-title">${_("Requirements")}</p></td>
+              <td><span class="important-dates-item-text prerequisites">${get_course_about_section(course, "prerequisites")}</span></td>
+            </tr>
+
           % endif
-        </ol>
+        </table>
 
         <div class="main-cta">
         %if user.is_authenticated() and registered:

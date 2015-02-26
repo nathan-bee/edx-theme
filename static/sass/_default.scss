@@ -337,7 +337,12 @@ text-align: center;
 
 .course-info .course-sidebar > section {
     box-shadow: none;
+    border: none;
     border-bottom: 2px solid $heiRed;
+}
+
+.course-info .course-sidebar .important-dates li {
+    border-bottom: none;
 }
 
 /****************************************************************************************************
