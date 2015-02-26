@@ -267,13 +267,18 @@ color: white;
 //
 
 //Background
-.container .about {
+.container.about {
     background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
     background-size: 950px auto;
     min-height: 790px;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
+}
+
+//Remove border on content container
+.container.about .vission .message {
+    border-bottom: 0;
 }
 
 
