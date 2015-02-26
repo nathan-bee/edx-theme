@@ -121,7 +121,7 @@ header.search {
     height: 0;
 }
 
-//Home main courses container
+//Home main course list container
 .home .highlighted-courses {
     margin-bottom: 0;
 }
@@ -134,8 +134,10 @@ header.search {
     padding-bottom: 0px !important;
 }
 
+//Courses main course list container
 .find-courses {
     background: none repeat scroll 0% 0% white;
+    padding-bottom: 0;
 }
 
 //Course listing container
@@ -261,12 +263,18 @@ color: white;
 }
 
 //
-//ABOUT
+//ABOUT and CONTACT
 //
 
-//
-
-
+//Background
+.container .about {
+    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-size: 950px auto;
+    min-height: 790px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
 
 
 
