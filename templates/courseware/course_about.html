@@ -223,13 +223,13 @@ from edxmako.shortcuts import marketing_link
 
           <tr class="important-dates-item">
             <td class="left"><p class="important-dates-item-title">${_("Course Number")}</p></td>
-            <td><span class="important-dates-item-text course-number">${course.display_number_with_default | h}</span></td>
+            <td class="right"><span class="important-dates-item-text course-number">${course.display_number_with_default | h}</span></td>
           </tr>
 
           % if not course.start_date_is_still_default:
             <tr class="important-dates-item">
               <td class="left"><p class="important-dates-item-title">${_("Classes Start")}</p></td>
-              <td><span class="important-dates-item-text start-date">${course.start_datetime_text()}</span></td>
+              <td class="right"><span class="important-dates-item-text start-date">${course.start_datetime_text()}</span></td>
             </tr>
 
           % endif
@@ -240,7 +240,7 @@ from edxmako.shortcuts import marketing_link
           % if get_course_about_section(course, "end_date") or course.end:
             <tr class="important-dates-item">
               <td class="left"><p class="important-dates-item-title">${_("Classes End")}</p></td>
-              <td><span class="important-dates-item-text final-date">
+              <td class="right"><span class="important-dates-item-text final-date">
                     % if get_course_about_section(course, "end_date"):
                         ${get_course_about_section(course, "end_date")}
                     % else:
@@ -254,7 +254,7 @@ from edxmako.shortcuts import marketing_link
           % if get_course_about_section(course, "effort"):
             <tr class="important-dates-item">
               <td class="left"><p class="important-dates-item-title">${_(" ")}</p></td>
-              <td><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")} hours per week</span></td>
+              <td class="right"><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")} hours per week</span></td>
             </tr>
 
           % endif
@@ -264,7 +264,7 @@ from edxmako.shortcuts import marketing_link
           %if course_price and (is_shopping_cart_enabled or is_cosmetic_price_enabled):
             <tr class="important-dates-item">
               <td class="left"><p class="important-dates-item-title">${_("Price")}</p></td>
-              <td><span class="important-dates-item-text">${course_price}</span></td>
+              <td class="right"><span class="important-dates-item-text">${course_price}</span></td>
             </tr>
 
           %endif
@@ -276,7 +276,7 @@ from edxmako.shortcuts import marketing_link
             <p class="important-dates-item-title">${_("Prerequisites")}</p>
             ## Multiple pre-requisite courses are not supported on frontend that's why we are pulling first element
             <td class="left"><span class="important-dates-item-text pre-requisite"><a href="${prc_target}">${pre_requisite_courses[0]['display']}</a></span></td>
-            <td><p class="tip">
+            <td class="right"><p class="tip">
             ${_("You must successfully complete {link_start}{prc_display}{link_end} before you begin this course.").format(
               link_start='<a href="{}">'.format(prc_target),
               link_end='</a>',
@@ -290,7 +290,7 @@ from edxmako.shortcuts import marketing_link
           % if get_course_about_section(course, "prerequisites"):
             <tr class="important-dates-item">
               <td class="left"><p class="important-dates-item-title">${_("Requirements")}</p></td>
-              <td><span class="important-dates-item-text prerequisites">${get_course_about_section(course, "prerequisites")}</span></td>
+              <td class="right"><span class="important-dates-item-text prerequisites">${get_course_about_section(course, "prerequisites")}</span></td>
             </tr>
 
           % endif
