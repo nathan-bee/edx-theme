@@ -28,6 +28,19 @@ $serif: $theme-serif-font, $serif;
 //Serif (Domine)
 @import url(http://fonts.googleapis.com/css?family=Domine:700);
 
+
+//
+//GENERAL
+//
+
+//general main container margin
+    .container {
+        padding: 0px 15px;
+    }
+
+
+
+
 //
 //HEADER
 //
@@ -162,7 +175,6 @@ header.search {
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
-    margin: 1em 25px;
 }
 
 //
@@ -337,14 +349,23 @@ color: white;
     display: flex;
 }
 
-//borders
+//borders and margins/padding
+.course-info .container {
+    padding-bottom: 0px;
+}
+
 .course-info .details {
     border-right: 2px solid $heiRed;
-    padding-right: 40px;
+    margin-right: 0;
+}
+
+.course-info .details .inner-wrapper {
+    padding-right: 20px;
 }
 
 .course-info .course-sidebar {
     width: 31%;
+    padding-left: 20px;
 }
 
 .course-info .course-sidebar > section {
