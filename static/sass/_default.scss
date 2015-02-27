@@ -236,6 +236,11 @@ header.search {
     padding: 10px 10px 12px;
     position: relative;
     width: 100%;
+    background: white;
+}
+
+.highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom {
+    background: white;
 }
 
 //Link bar box (normal)
@@ -275,18 +280,17 @@ color: white;
 
 //Link bar arrow box
 .highlighted-courses .courses .course header.course-preview .info-link, .find-courses .courses .course header.course-preview .info-link {
-    border-left: 1px solid rgba(150, 150, 150, 0.5);
+    border-left: none;
     box-sizing: border-box;
     color: white;
     display: inline-block;
-    font: bold 1em/1em "Source Sans","Open Sans",Verdana,Geneva,sans-serif,sans-serif;
     height: 100%;
     opacity: 1;
     padding-top: 0px;
     position: absolute;
     right: 0px;
     text-align: center;
-    text-shadow: 0px 1px rgba(255, 255, 255, 0.6);
+    text-shadow: none;
     top: 0px;
     width: 60px;
     vertical-align: middle;
