@@ -373,9 +373,14 @@ color: white;
     display: flex;
 }
 
-//borders and margins/padding
+//borders and margins/padding, background image
 .course-info .container {
     padding-bottom: 0px;
+    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-size: 950px auto;
+    background-position: center -60px;
+    background-repeat: no-repeat;
+
 }
 
 .course-info .details {
@@ -385,6 +390,10 @@ color: white;
 
 .course-info .details .inner-wrapper {
     padding-right: 20px;
+}
+
+.course-info .details .inner-wrapper .course-staff .teacher .teacher-image {
+    border: none;
 }
 
 .course-info .course-sidebar {
