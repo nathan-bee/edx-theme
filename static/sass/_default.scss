@@ -19,14 +19,32 @@ $theme-serif-font: 'Domine';
 $serif: $theme-serif-font, $serif;
 
 //
-//FONT IMPORTS
+//FONTS
 //
+
+//imports
 
 //Sans-Serif (Lato)
 @import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
 
 //Serif (Domine)
 @import url(http://fonts.googleapis.com/css?family=Domine:700);
+
+//assignments
+
+//sans-serif
+a, p, h1, h2, h3 {
+    font-family: $sans-serif;
+}
+
+//serif
+header.global h1.logo a {
+    font-family: $serif;
+}
+
+.course-info .details h2 {
+    font-family: $serif;
+}
 
 
 //
