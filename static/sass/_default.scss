@@ -33,8 +33,12 @@ $serif: $theme-serif-font, $serif;
 //assignments
 
 //sans-serif
-a, p, h1, h2, h3 {
+a, h1, h2, h3 {
     font-family: $sans-serif;
+}
+
+p {
+    font-family: $sans-serif !important;
 }
 
 //serif
