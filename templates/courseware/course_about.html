@@ -253,8 +253,8 @@ from edxmako.shortcuts import marketing_link
 
           % if get_course_about_section(course, "effort"):
             <tr class="important-dates-item">
-              <td class="left"><p class="important-dates-item-title">${_("Estimated Effort")}</p></td>
-              <td><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")}</span></td>
+              <td class="left"><p class="important-dates-item-title">${_(" ")}</p></td>
+              <td><span class="important-dates-item-text effort">${get_course_about_section(course, "effort")} hours per week</span></td>
             </tr>
 
           % endif
