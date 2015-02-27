@@ -289,7 +289,10 @@ color: white;
 //Login Button
 
 .course-info .course-sidebar .main-cta {
-    margin-top: 30px
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
 
 
 
@@ -303,6 +306,7 @@ color: white;
     box-sizing: border-box;
     display: block;
     width: 90px;
+    text-align: center;
 }
 
 //course name and share buttons
@@ -336,6 +340,7 @@ color: white;
 //borders
 .course-info .details {
     border-right: 2px solid $heiRed;
+    padding-right: 40px;
 }
 
 .course-info .course-sidebar {
@@ -357,19 +362,14 @@ color: white;
     width: 100%;
 }
 
-.important-dates-item td {
-    width: 50%;
-    padding: 2px 5px;
-}
-
-.important-dates-item .left {
+.important-dates-item .left-item {
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
-.important-dates-item .right {
+.important-dates-item .right-item {
     text-align: left;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 
