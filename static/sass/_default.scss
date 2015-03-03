@@ -432,6 +432,32 @@ color: white;
     padding-left: 10px;
 }
 
+//
+//Login
+//
+
+//Border Login Form
+.login-register form {
+	border: 1px solid $heiRed
+}
+
+//Input fields
+.login-register .form-field input {
+	background: $heiBeige;
+}
+
+//Log In Button, Create Account Button
+.login-register .action-primary, .login-register .nav-btn {
+	color: white;
+	background: $heiRed;
+	border: none;
+	border-radius: 0;
+
+}
+
+.login-register .action-primary:hover, .login-register .action-primary:focus, .login-register .action-primary:active, .login-register .nav-btn:hover, .login-register .nav-btn:focus, .login-register .nav-btn:active {
+	background: $heiRed;
+}
 
 
 /****************************************************************************************************
