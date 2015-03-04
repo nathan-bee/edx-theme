@@ -436,6 +436,11 @@ color: white;
 //Login
 //
 
+//bottom margin
+.login-register {
+	margin-bottom: 50px;
+}
+
 //Border Login Form
 .login-register form {
 	border: 1px solid $heiRed !important;
@@ -455,6 +460,39 @@ color: white;
 .login-register .form-field input, .login-register .form-field textarea {
 	background: $heiBeige !important;
 	border: 1px solid $heiRed !important;
+}
+
+//text input fields backgrounds (had to use ids, class assingments above do not have any effect)
+#register-email {
+	background: $heiBeige;
+}
+
+#register-name {
+	background: $heiBeige;
+}
+
+#register-username {
+	background: $heiBeige;
+}
+
+#register-password {
+	background: $heiBeige;
+}
+
+#register-mailing_address {
+	background: $heiBeige;
+}
+
+#register-goals {
+	background: $heiBeige;
+}
+
+#login-email {
+	background: $heiBeige;
+}
+
+##login-password {
+	background: $heiBeige;
 }
 
 //Honour Code Link
