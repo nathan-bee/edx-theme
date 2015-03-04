@@ -500,6 +500,13 @@ color: white;
 	color: $heiRed !important;
 }
 
+//forgotten password link
+.login-register .form-field .field-link, .login-register .form-field .field-link:hover, .login-register .form-field .field-link:active, .login-register .form-field .field-link:visited, .login-register .form-field .field-link:focus {
+	color: $heiRed;
+}
+
+
+
 //Log In Button, Create Account Button
 .login-register .action-primary, .login-register .nav-btn {
 	color: white !important;
