@@ -606,10 +606,16 @@ header.global.slim h2 {
 
 //course wrapper
 div.course-wrapper {
-    border: none;
-    background-color: $heiBeige;
-    padding-left: 20px;
+    border: none !important;
+    background: $heiBeige !important;
+    padding-left: 20px !important;
 
+}
+
+//courseware content
+div.course-wrapper section.course-content {
+    background: white;
+    padding: 20px;
 }
 
 //courseware nav
@@ -620,12 +626,12 @@ div.course-wrapper {
 }
 
 .course-index div#accordion {
-    padding: 4px;
+    padding: 4px 4px 1px 4px;
     background: white;
 }
 
 .course-index div#accordion .chapter {
-    background: $heiBeige;
+    background: $heiBeige !important;
     margin-bottom: 4px
 }
 
