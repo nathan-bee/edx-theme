@@ -537,7 +537,7 @@ header.global .primary > a:active, header.global .primary > a:focus {
 }
 
 header.global .primary:last-child > a {
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px !important;
 }
 
 header.global .user {
@@ -572,7 +572,7 @@ header.global .user {
 }
 
 //profile info enter course button
-.dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover, .dashboard .my-courses .course .info .enter-course:active, .dashboard .my-courses .course .info .enter-course:focus {
+.dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover:not(:disabled), .dashboard .my-courses .course .info .enter-course:active:not(:disabled), .dashboard .my-courses .course .info .enter-course:focus:not(:disabled) {
     border: none;
     box-shadow: none;
     text-shadow: none;
@@ -581,6 +581,24 @@ header.global .user {
     border-radius: 0px;
 
 }
+
+
+//
+// Course
+//
+
+//header
+header.global.slim {
+    border-bottom: none;
+    box-shadow: none;
+    background: $heiRed;
+}
+
+//instructor preview menu
+.wrapper-preview-menu {
+    background-color: $heiBeige;
+}
+
 /****************************************************************************************************
 * Stanford Theming File
 *
