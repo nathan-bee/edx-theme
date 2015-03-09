@@ -527,6 +527,10 @@ color: white;
 //Authenticated
 //
 
+.window-wrap {
+    background: white !important;
+}
+
 //Header profile button
 header.global .primary > a, header.global .primary > a:hover,
 header.global .primary > a:active, header.global .primary > a:focus {
@@ -612,12 +616,12 @@ header.global.slim h2 {
 
 //active tab indicator
 .wrapper-course-material ol.course-tabs li a.active {
-    background-image: none;
-    background: $heiRed;
-    box-shadow: none;
-    color: white;
-    text-shadow: none;
-    border-radius: 0px;
+    background-image: none !important;
+    background: $heiRed !important;
+    box-shadow: none !important;
+    color: white !important;
+    text-shadow: none !important;
+    border-radius: 0px !important;
 }
 
 //course wrapper
@@ -630,6 +634,8 @@ div.course-wrapper {
 
 .container > div {
     width: auto !important;
+    background: $heiBeige !important;
+    border: 1px solid $heiRed !important;
 }
 
 //courseware content
@@ -682,7 +688,14 @@ div.course-wrapper section.course-content .xblock {
     background: $heiRed !important;
     border-radius: 0px !important;
 }
+.course-index div#accordion ul.ui-accordion-content li.active > a p {
+    color: white;
+}
 
+//Instructor
+.instructor-dashboard-wrapper-2 {
+    width: 100% !important;
+}
 
 /****************************************************************************************************
 * Stanford Theming File
