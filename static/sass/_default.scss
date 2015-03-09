@@ -589,9 +589,13 @@ header.global .user {
 
 //header
 header.global.slim {
-    border-bottom: none;
-    box-shadow: none;
-    background: $heiRed;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: $heiRed !important;
+}
+
+header.global.slim h2 {
+    text-shadow: none !important;
 }
 
 //instructor preview menu
