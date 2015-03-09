@@ -601,13 +601,23 @@ header.global.slim h2 {
 //instructor preview menu
 .wrapper-preview-menu {
     background: $heiBeige !important;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 // course material nav
 .wrapper-course-material .course-material {
     background: $heiBeige;
-    margin-top: 10px;
+    margin-top: 10px !important;
+}
+
+//active tab indicator
+.wrapper-course-material ol.course-tabs li a.active {
+    background-image: none;
+    background: $heiRed;
+    box-shadow: none;
+    color: white;
+    text-shadow: none;
+    border-radius: 0px;
 }
 
 //course wrapper
@@ -619,7 +629,7 @@ div.course-wrapper {
 }
 
 .container > div {
-    width: auto;
+    width: auto !important;
 }
 
 //courseware content
@@ -663,6 +673,14 @@ div.course-wrapper section.course-content .xblock {
     background: white;
     width: auto;
     padding: 9px 0px;
+}
+
+//active page indicator
+.course-index div#accordion ul.ui-accordion-content li.active > a {
+    border: none !important;
+    box-shadow: none !important;
+    background: $heiRed !important;
+    border-radius: 0px !important;
 }
 
 
