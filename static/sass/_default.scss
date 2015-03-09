@@ -4,7 +4,7 @@
 
 //Colour
 $heiRed: #b5152b;
-$heiBeige: #f4flea;
+$heiBeige: #f4f1ea;
 $heiLightGrey: #cccccc;
 $heiDarkGrey: #666666;
 
@@ -537,7 +537,7 @@ header.global .primary > a:active, header.global .primary > a:focus {
 }
 
 header.global .primary:last-child > a {
-    border-radius: 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 header.global .user {
@@ -572,7 +572,7 @@ header.global .user {
 }
 
 //profile info enter course button
-.dashboard .my-courses .course .info .enter-course {
+.dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover, .dashboard .my-courses .course .info .enter-course:active, .dashboard .my-courses .course .info .enter-course:focus {
     border: none;
     box-shadow: none;
     text-shadow: none;
