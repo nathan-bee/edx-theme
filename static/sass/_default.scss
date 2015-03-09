@@ -600,7 +600,8 @@ header.global.slim h2 {
 
 //instructor preview menu
 .wrapper-preview-menu {
-    background-color: $heiBeige !important;
+    background: $heiBeige !important;
+    margin-bottom: 10px;
 }
 
 //course wrapper
@@ -613,17 +614,23 @@ div.course-wrapper {
 
 //courseware nav
 .course-index {
-    border: none;
-    border-radius: 0px;
+    border: none !important;
+    border-radius: 0px !important;
+    background: $heiBeige !important;
+}
+
+.course-index div#accordion {
+    padding: 4px;
     background: white;
 }
 
 .course-index div#accordion .chapter {
     background: $heiBeige;
+    margin-bottom: 4px
 }
 
 .course-index div#accordion .chapter .is-open {
-    background: white;
+    background: white !important;
 }
 
 .course-index div#accordion h3.ui-accordion-header a {
@@ -634,6 +641,7 @@ div.course-wrapper {
 .course-index div#accordion ul.ui-accordion-content {
     background: white;
     width: auto;
+    padding: 9px 0px;
 }
 
 
