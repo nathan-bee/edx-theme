@@ -8,6 +8,9 @@ $heiBeige: #f4flea;
 $heiLightGrey: #cccccc;
 $heiDarkGrey: #666666;
 
+//changed theme colours
+$dark-color: $heiRed; //red link colour
+
 //Background
 $body-bg: white;
 
@@ -520,7 +523,64 @@ color: white;
 	background: $heiRed !important;
 }
 
+//
+//Authenticated
+//
 
+//Header profile button
+header.global .primary > a, header.global .primary > a:hover,
+header.global .primary > a:active, header.global .primary > a:focus {
+    background-color: $heiRed;
+    border-radius: 0px;
+    color: white;
+    border: 1px solid white;
+}
+
+header.global .primary:last-child > a {
+    border-radius: 0px;
+}
+
+header.global .user {
+    margin-top: 0px;
+}
+
+//
+//dashboard
+//
+
+//profile info
+.dashboard .profile-sidebar header.profile {
+    border: 1px solid $heiRed;
+    background: $heiBeige;
+}
+
+.dashboard .profile-sidebar .user-info > ul {
+    border-color: $heiRed;
+}
+
+.dashboard .profile-sidebar .user-info > ul li {
+    border-bottom: 1px dotted $heiRed;
+}
+
+//my courses
+.dashboard .my-courses > header {
+    border-bottom: 1px solid $heiRed;
+}
+
+.dashboard .my-courses .listing-courses .course-item {
+    border-bottom: 4px solid $heiLightGrey;
+}
+
+//profile info enter course button
+.dashboard .my-courses .course .info .enter-course {
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    background-image: none;
+    background-color: $heiRed;
+    border-radius: 0px;
+
+}
 /****************************************************************************************************
 * Stanford Theming File
 *
@@ -532,7 +592,7 @@ color: white;
 //-----------------
 //Main Color Variables
 $main-color: #f7691f;
-$dark-color: #ea281f; //Link Color
+//$dark-color: #ea281f; //Link Color
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar ***Custom, not from palette***
 //Main BG Color Variables
