@@ -604,6 +604,12 @@ header.global.slim h2 {
     margin-bottom: 10px;
 }
 
+// course material nav
+.wrapper-course-material .course-material {
+    background: $heiBeige;
+    margin-top: 10px;
+}
+
 //course wrapper
 div.course-wrapper {
     border: none !important;
@@ -612,8 +618,17 @@ div.course-wrapper {
 
 }
 
+.container > div {
+    width: auto;
+}
+
 //courseware content
 div.course-wrapper section.course-content {
+    background: $heiBeige !important;
+    padding: 3px 20px !important;
+}
+
+div.course-wrapper section.course-content .xblock {
     background: white;
     padding: 20px;
 }
