@@ -65,6 +65,11 @@ header.global h1.logo a {
         padding: 0px 15px;
     }
 
+//white background
+
+body {
+    background-color: white;
+}
 //
 //HEADER
 //
@@ -607,6 +612,22 @@ header.global.slim h2 {
     background: $heiBeige !important;
     margin-bottom: 10px !important;
 }
+
+//course info
+div.info-wrapper section.updates > ol > li {
+    border-bottom: 1px solid $heiRed;
+}
+
+div.info-wrapper section.handouts {
+    background-color: $heiBeige;
+    border-left: $heiRed;
+    padding-bottom: 2.5em;
+
+}
+
+//
+//Courseware
+//
 
 // course material nav
 .wrapper-course-material .course-material {
