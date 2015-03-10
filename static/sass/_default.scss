@@ -614,14 +614,18 @@ header.global.slim h2 {
 }
 
 //course info
+.info-wrapper {
+    padding-bottom: 30px !important;
+}
+
 div.info-wrapper section.updates > ol > li {
-    border-bottom: 1px solid $heiRed;
+    border-bottom: 1px solid $heiRed !important;
 }
 
 div.info-wrapper section.handouts {
-    background-color: $heiBeige;
-    border-left: $heiRed;
-    padding-bottom: 2.5em;
+    background-color: $heiBeige !important;
+    border-left: $heiRed !important;
+    
 
 }
 
@@ -631,7 +635,7 @@ div.info-wrapper section.handouts {
 
 // course material nav
 .wrapper-course-material .course-material {
-    background: $heiBeige;
+    background: $heiBeige !important;
     margin-top: 10px !important;
 }
 
@@ -666,8 +670,8 @@ div.course-wrapper section.course-content {
 }
 
 div.course-wrapper section.course-content .xblock {
-    background: white;
-    padding: 20px;
+    background: white !important;
+    padding: 20px !important;
 }
 
 //courseware nav
@@ -678,13 +682,13 @@ div.course-wrapper section.course-content .xblock {
 }
 
 .course-index div#accordion {
-    padding: 4px 4px 1px 4px;
-    background: white;
+    padding: 4px 4px 1px 4px !important;
+    background: white !important;
 }
 
 .course-index div#accordion .chapter {
     background: $heiBeige !important;
-    margin-bottom: 4px
+    margin-bottom: 4px !important;
 }
 
 .course-index div#accordion .chapter .is-open {
@@ -692,13 +696,13 @@ div.course-wrapper section.course-content .xblock {
 }
 
 .course-index div#accordion h3.ui-accordion-header a {
-    color: black;
-    border-right: none;
+    color: black !important;
+    border-right: none !important
 }
 
 .course-index div#accordion ul.ui-accordion-content {
-    background: white;
-    width: auto;
+    background: white !important;
+    width: auto !important;
     padding: 9px 0px;
 }
 
