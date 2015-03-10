@@ -71,6 +71,16 @@ input[type="button"] {
     text-shadow: none !important;
 }
 
+button {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: $heiRed !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
 //general main container margin
     .container {
         padding: 0px 15px;
