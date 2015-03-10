@@ -60,6 +60,17 @@ header.global h1.logo a {
 //GENERAL
 //
 
+//buttons
+input[type="button"] {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: $heiRed !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
 //general main container margin
     .container {
         padding: 0px 15px;
@@ -126,7 +137,7 @@ header.global .nav-seperator {
 .highlighted-courses .courses {
     background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
-    min-height: 520px;
+    min-height: 640px;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -136,7 +147,7 @@ header.global .nav-seperator {
 .find-courses .courses {
     background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
-    min-height: 730px;
+    min-height: 850px;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -320,7 +331,7 @@ color: white;
 .container.about {
     background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
-    min-height: 790px;
+    min-height: 905px;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -801,6 +812,23 @@ div.course-wrapper section.course-content .xblock {
 .idash-section.active-section hr {
     border-color: $heiRed !important;
 }
+
+//
+//Modules
+//
+
+//Discussion Module Button
+.discussion-module .new-post-btn, .discussion-user-threads .new-post-button {
+    background-color: $heiRed;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+
+}
+
+
+
+
 /****************************************************************************************************
 * Stanford Theming File
 *
