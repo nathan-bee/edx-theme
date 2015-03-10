@@ -819,7 +819,7 @@ div.course-wrapper section.course-content .xblock {
 //Modules
 //
 
-//Discussion Module Button
+//Discussion Module
 .discussion-module .new-post-btn, .discussion-user-threads .new-post-button {
     background-color: $heiRed;
     background-image: none;
@@ -835,6 +835,11 @@ body.discussion .course-tabs .right .new-post-btn {
     border-radius: 0px;
 }
 
+.discussion-module, .discussion-user-threads {
+    background: $heiBeige !important;
+}
+
+
 //xmodule button
 .xmodule_display.xmodule_CapaModule div.problem div.action .show {
     border: none !important;
@@ -846,6 +851,29 @@ body.discussion .course-tabs .right .new-post-btn {
     text-shadow: none !important;
 }
 
+.xmodule_display.xmodule_CapaModule div.problem div.action .show .show-label {
+    color: white;
+}
+
+//xmodule nav bar
+.xmodule_display.xmodule_SequenceModule .sequence-nav .sequence-list-wrapper {
+    background-color: $heiBeige;
+    background-image: none;
+    border: 1px solid $heiRed;
+    box-shadow: none;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.button-previous {
+    background-color: $heiRed;
+    border: 1px solid $heiRed;
+    box-shadow: none;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.button-next {
+    background-color: $heiRed;
+    border: 1px solid $heiRed;
+    box-shadow: none;
+}
 
 
 /****************************************************************************************************
