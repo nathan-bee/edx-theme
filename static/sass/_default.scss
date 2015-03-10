@@ -364,7 +364,7 @@ color: white;
 .course-info .course-sidebar .main-cta .register.disabled {
     background-color: $heiBeige;
     border: 5px solid $heiRed;
-    color: $heiRed;
+    color: $heiRed !important;
     margin-bottom: 5px;
 }
 
@@ -394,6 +394,13 @@ color: white;
 //course profile
 .heiCourseProfile {
     display: flex;
+}
+
+//video link
+.media .hero {
+    width: 200px;
+    height: 113px;
+    background-image: url('../themes/default/images/MOOC_play_video_icon.png');
 }
 
 //borders and margins/padding, background image
