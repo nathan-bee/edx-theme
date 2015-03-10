@@ -71,15 +71,7 @@ input[type="button"] {
     text-shadow: none !important;
 }
 
-button {
-    border: none !important;
-    border-radius: 0px !important;
-    box-shadow: none !important;
-    color: white !important;
-    background-color: $heiRed !important;
-    background-image: none !important;
-    text-shadow: none !important;
-}
+
 
 //general main container margin
     .container {
@@ -836,6 +828,23 @@ div.course-wrapper section.course-content .xblock {
 
 }
 
+body.discussion .course-tabs .right .new-post-btn {
+    background-color: $heiRed;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+}
+
+//xmodule button
+.xmodule_display.xmodule_CapaModule div.problem div.action .show {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: $heiRed !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
 
 
 
