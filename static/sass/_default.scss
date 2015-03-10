@@ -465,6 +465,10 @@ color: white;
 	border: 1px solid $heiRed !important;
 }
 
+.login-register .form-field .field-link {
+    color: $heiRed;
+}
+
 .login-register .form-field input, .login-register .form-field textarea {
 	background: $heiBeige !important;
 	border: 1px solid $heiRed !important;
@@ -536,6 +540,15 @@ color: white;
     background: white !important;
 }
 
+//Header
+header.global.slim h2 {
+    color: white;
+}
+
+header.global.slim h2 .provider {
+    color: white;
+}
+
 //Header profile button
 header.global .primary > a, header.global .primary > a:hover,
 header.global .primary > a:active, header.global .primary > a:focus {
@@ -560,7 +573,7 @@ header.global .user {
 //profile info
 .dashboard .profile-sidebar header.profile {
     border: 1px solid $heiRed;
-    background: $heiBeige;
+    background: white;
 }
 
 .dashboard .profile-sidebar .user-info > ul {
@@ -577,7 +590,7 @@ header.global .user {
 }
 
 .dashboard .my-courses .listing-courses .course-item {
-    border-bottom: 4px solid $heiLightGrey;
+    border-bottom: 1px solid $heiRed;
 }
 
 //profile info enter course button
@@ -654,6 +667,7 @@ div.course-wrapper {
     border: none !important;
     background: $heiBeige !important;
     padding-left: 20px !important;
+    padding-bottom: 20px !important;
 
 }
 
@@ -679,6 +693,11 @@ div.course-wrapper section.course-content .xblock {
     border: none !important;
     border-radius: 0px !important;
     background: $heiBeige !important;
+}
+
+.course-index h3.active a {
+    background: white;
+    margin-bottom: 5px;
 }
 
 .course-index div#accordion {
@@ -729,7 +748,7 @@ div.course-wrapper section.course-content .xblock {
 
 .instructor-dashboard-content-2 input[type="button"] {
     border: none !important;
-    border-radius: none !important;
+    border-radius: 0px !important;
     box-shadow: none !important;
     color: white !important;
     background-color: $heiRed !important;
@@ -739,7 +758,7 @@ div.course-wrapper section.course-content .xblock {
 
 .instructor-dashboard-content-2 input[type="button"]:hover:not(:disabled), .instructor-dashboard-content-2 input[type="button"]:focus:not(:disabled), .instructor-dashboard-content-2 input[type="button"]:active:not(:disabled) {
     border: none !important;
-    border-radius: none !important;
+    border-radius: 0px !important;
     box-shadow: none !important;
     color: white !important;
     background-color: $heiRed !important;
