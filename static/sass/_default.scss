@@ -542,7 +542,7 @@ color: white;
 
 //Header
 header.global.slim h2 {
-    color: white;
+    color: white !important;
 }
 
 header.global.slim h2 .provider {
