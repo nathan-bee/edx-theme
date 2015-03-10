@@ -466,7 +466,7 @@ color: white;
 }
 
 .login-register .form-field .field-link {
-    color: $heiRed;
+    color: $heiRed !important;
 }
 
 .login-register .form-field input, .login-register .form-field textarea {
@@ -593,6 +593,10 @@ header.global .user {
     border-bottom: 1px solid $heiRed;
 }
 
+.dashboard .my-courses .course .cover {
+    border-radius: 0px;
+    border-color: $heiRed;
+}
 //profile info enter course button
 .dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover:not(:disabled), .dashboard .my-courses .course .info .enter-course:active:not(:disabled), .dashboard .my-courses .course .info .enter-course:focus:not(:disabled) {
     border: none;
