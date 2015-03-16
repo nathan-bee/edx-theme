@@ -71,6 +71,10 @@ input[type="button"] {
     text-shadow: none !important;
 }
 
+//text boxes
+input[type="text"] {
+    background: $heiBeige;
+}
 
 
 //general main container margin
@@ -407,6 +411,8 @@ color: white;
 //course profile
 .heiCourseProfile {
     display: flex;
+    height: 200px;
+    width: 375px;
 }
 
 .heiCourseProfile a.media {
@@ -482,7 +488,7 @@ color: white;
 }
 
 //
-//Login
+//Login 1 (worked on vagrant but not the server)
 //
 
 //bottom margin
@@ -515,6 +521,22 @@ color: white;
 	border: 1px solid $heiRed !important;
 }
 
+//
+//Login 2 (server)
+//
+
+.view-login .introduction {
+    background: $heiBeige;
+}
+
+.view-login .form-actions button {
+    background: $heiRed;
+    color: white;
+}
+
+.view-login .content-wrapper {
+    margin-top: 15px;
+}
 //text input fields backgrounds (had to use ids, class assingments above do not have any effect)
 #register-email {
 	background: $heiBeige;
