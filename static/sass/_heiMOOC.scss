@@ -69,6 +69,7 @@ input[type="button"] {
     background-color: $heiRed !important;
     background-image: none !important;
     text-shadow: none !important;
+    box-shadow: none !important;
 }
 
 //text boxes
@@ -561,7 +562,11 @@ color: white;
 //Login 2 (server)
 //
 
-.view-login {
+.view-login .introduction {
+    background: $heiBeige;
+}
+
+.view-login .container {
     background: $heiBeige;
 }
 
@@ -595,9 +600,26 @@ color: white;
 	border-radius: 0 !important;
 }
 
+//register form background
+.view-register .introduction {
+    background: $heiBeige;
+}
+
+.view-register .container {
+    background: $heiBeige;
+}
 
 .login-register .action-primary:hover, .login-register .action-primary:focus, .login-register .action-primary:active, .login-register .nav-btn:hover, .login-register .nav-btn:focus, .login-register .nav-btn:active {
 	background: $heiRed !important;
+}
+
+.view-register .form-actions button {
+    background: $heiRed !important;
+    color: white !important;
+}
+
+.view-register .content-wrapper {
+    margin-top: 15px;
 }
 
 //
