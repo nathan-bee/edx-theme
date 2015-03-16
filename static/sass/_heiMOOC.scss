@@ -137,7 +137,7 @@ header.global .nav-seperator {
 
 //Background image home
 .highlighted-courses .courses {
-    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     min-height: 640px;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ header.global .nav-seperator {
 
 //Background image courses
 .find-courses .courses {
-    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     min-height: 850px;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ color: white;
     top: 0px;
     width: 60px;
     vertical-align: middle;
-    background-image: url('../themes/default/images/heiMOOC_arrow.png');
+    background-image: url('../themes/heiMOOC/images/heiMOOC_arrow.png');
     background-size: 8px;
 	background-repeat: no-repeat;
 	background-position: center right;
@@ -331,7 +331,7 @@ color: white;
 
 //Background
 .container.about {
-    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     min-height: 905px;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ color: white;
 .hei-play-video {
     width: 200px;
     height: 113px;
-    background-image: url('../themes/default/images/MOOC_play_video_icon.png');
+    background-image: url('../themes/heiMOOC/images/MOOC_play_video_icon.png');
     height: 200px;
     background-size: 200px auto;
     background-position: center center;
@@ -430,7 +430,7 @@ color: white;
 //borders and margins/padding, background image
 .course-info .container {
     padding-bottom: 0px;
-    background-image: url('../themes/default/images/MOOC_Background_seal_image.png');
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     background-position: center -60px;
     background-repeat: no-repeat;
@@ -1017,10 +1017,10 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 // CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/default/images/sunrise.jpg');
+$homepage-bg-image: url('../themes/heiMOOC/images/sunrise.jpg');
 $login-banner-image: none;
 $register-banner-image: none;
-$video-thumb-url: '../themes/default/images/edx.png';
+$video-thumb-url: '../themes/heiMOOC/images/edx.png';
 //-----------------
 // Mixin Styles
 //-----------------
