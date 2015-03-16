@@ -72,6 +72,10 @@ input[type="button"] {
     box-shadow: none !important;
 }
 
+input[type="button"]:disabled {
+    opacity: 1;
+}
+
 //text boxes
 input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
     background: $heiBeige;
@@ -243,7 +247,7 @@ header.search {
 
 //Box for course image and description (normal)
 .highlighted-courses .courses .course .info, .find-courses .courses .course .info {
-    height: 380px;
+    height: 400px;
 }
 
 //Box for course image and description (hover)
@@ -254,7 +258,7 @@ header.search {
 //Text box for course description
 .highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc {
     box-sizing: border-box;
-    height: 150px;
+    height: 170px;
     overflow: hidden;
     padding: 10px 10px 12px;
     position: relative;
@@ -268,7 +272,7 @@ header.search {
 
 //Link bar box (normal)
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview {
-    top: 180px;
+    top: 200px;
     height: 20px;
     background-image: none;
     background: $heiRed;
@@ -650,6 +654,7 @@ header.global .primary > a:active, header.global .primary > a:focus {
 
 header.global .primary:last-child > a {
     border-radius: 0px !important;
+    height: 27px;
 }
 
 header.global .user {
@@ -762,6 +767,7 @@ div.course-wrapper {
     background: $heiBeige !important;
     padding-left: 20px !important;
     padding-bottom: 20px !important;
+    width: 1160px !important;
 
 }
 
