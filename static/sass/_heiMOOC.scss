@@ -45,7 +45,7 @@ a, h1, h2, h3, span {
 p {
     font-family: $sans-serif !important;
     color: black;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em !important;
 }
 
 //serif
@@ -950,7 +950,13 @@ body.discussion .course-tabs .right .new-post-btn {
     box-shadow: none;
 }
 
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.disabled {
+    opacity: 1 !important;
+}
 
+.xmodule_display.xmodule_SequenceModule .sequence-nav .right-shadow, .xmodule_display.xmodule_SequenceModule .sequence-nav .left-shadow {
+    background-image: none;
+}
 /****************************************************************************************************
 * Stanford Theming File
 *
