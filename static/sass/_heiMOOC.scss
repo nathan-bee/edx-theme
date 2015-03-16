@@ -36,10 +36,10 @@ $serif: $theme-serif-font, $serif;
 //assignments
 
 //sans-serif
-a, h1, h2, h3, span {
+a, h1, h2, h3, span, li {
     font-family: $sans-serif;
     color: black;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em !important;
 }
 
 p {
