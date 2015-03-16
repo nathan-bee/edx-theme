@@ -39,11 +39,13 @@ $serif: $theme-serif-font, $serif;
 a, h1, h2, h3, span {
     font-family: $sans-serif;
     color: black;
+    letter-spacing: 0.05em;
 }
 
 p {
     font-family: $sans-serif !important;
     color: black;
+    letter-spacing: 0.05em;
 }
 
 //serif
