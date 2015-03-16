@@ -245,6 +245,11 @@ header.search {
     transition: all 0.15s linear 0s;
 }
 
+//box for image and bar
+.highlighted-courses .courses .course .inner-wrapper, .find-courses .courses .course .inner-wrapper {
+    height: 220px;
+}
+
 //Box for course image and description (normal)
 .highlighted-courses .courses .course .info, .find-courses .courses .course .info {
     height: 400px;
@@ -624,6 +629,15 @@ color: white;
 
 .view-register .content-wrapper {
     margin-top: 15px;
+}
+
+//register login button
+.register .aside .cta-login .cta-login-action {
+    border-radius: 0px !important;
+    border: none !important;
+    background: $heiRed !important;
+    color: white !important;
+
 }
 
 //
