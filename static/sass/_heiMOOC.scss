@@ -72,7 +72,7 @@ input[type="button"] {
 }
 
 //text boxes
-input[type="text"] {
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
     background: $heiBeige;
 }
 
@@ -101,7 +101,7 @@ header.global {
 }
 
 header.global .nav-global li a {
-    color: white;
+    color: white !important;
 }
 
 header.global .nav-global li a:hover, header.global .nav-global li a:focus, header.global .nav-global li a:active, header.global .nav-global div a:hover, header.global .nav-global div a:focus, header.global .nav-global div a:active {
@@ -411,14 +411,17 @@ color: white;
 //course profile
 .heiCourseProfile {
     display: flex;
-    height: 200px;
-    width: 375px;
 }
 
-.heiCourseProfile a.media {
+.heiCourseProfile .media {
     margin-left: auto;
     margin-right: auto;
 }
+
+.heiCourseProfile .media .hero img {
+    height: 200px;
+    max-width: 370px;
+    }
 
 //video link
 .hei-play-video {
@@ -521,54 +524,56 @@ color: white;
 	border: 1px solid $heiRed !important;
 }
 
+//text input fields backgrounds (had to use ids, class assingments above do not have any effect)
+#register-email {
+    background: $heiBeige;
+}
+
+#register-name {
+    background: $heiBeige;
+}
+
+#register-username {
+    background: $heiBeige;
+}
+
+#register-password {
+    background: $heiBeige;
+}
+
+#register-mailing_address {
+    background: $heiBeige;
+}
+
+#register-goals {
+    background: $heiBeige;
+}
+
+#login-email {
+    background: $heiBeige;
+}
+
+#login-password {
+    background: $heiBeige;
+}
+
 //
 //Login 2 (server)
 //
 
-.view-login .introduction {
+.view-login {
     background: $heiBeige;
 }
 
 .view-login .form-actions button {
-    background: $heiRed;
-    color: white;
+    background: $heiRed !important;
+    color: white !important;
 }
 
 .view-login .content-wrapper {
     margin-top: 15px;
 }
-//text input fields backgrounds (had to use ids, class assingments above do not have any effect)
-#register-email {
-	background: $heiBeige;
-}
 
-#register-name {
-	background: $heiBeige;
-}
-
-#register-username {
-	background: $heiBeige;
-}
-
-#register-password {
-	background: $heiBeige;
-}
-
-#register-mailing_address {
-	background: $heiBeige;
-}
-
-#register-goals {
-	background: $heiBeige;
-}
-
-#login-email {
-	background: $heiBeige;
-}
-
-#login-password {
-	background: $heiBeige;
-}
 
 //Honour Code Link
 .login-register .form-field label a {
