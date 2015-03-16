@@ -631,6 +631,10 @@ color: white;
     margin-top: 15px;
 }
 
+.register form .field textarea {
+    background: $heiBeige !important;
+}
+
 //register login button
 .register .aside .cta-login .cta-login-action {
     border-radius: 0px !important;
