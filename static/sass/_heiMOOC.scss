@@ -107,13 +107,17 @@ header.global {
     width: 100%;
 }
 
+header.global .nav-global li {
+    color: white !important;
+}
+
 header.global .nav-global li a {
     color: white !important;
 }
 
 header.global .nav-global li a:hover, header.global .nav-global li a:focus, header.global .nav-global li a:active, header.global .nav-global div a:hover, header.global .nav-global div a:focus, header.global .nav-global div a:active {
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .right {
@@ -441,7 +445,7 @@ color: white;
     height: 113px;
     background-image: url('../themes/heiMOOC/images/MOOC_play_video_icon.png');
     height: 200px;
-    background-size: 200px auto;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -955,7 +959,7 @@ body.discussion .course-tabs .right .new-post-btn {
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav .right-shadow, .xmodule_display.xmodule_SequenceModule .sequence-nav .left-shadow {
-    background-image: none;
+    background: none;
 }
 /****************************************************************************************************
 * Stanford Theming File
