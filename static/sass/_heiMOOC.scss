@@ -741,6 +741,7 @@ header.global .user {
 .dashboard .my-courses .course .cover {
     border-radius: 0px;
     border-color: $heiRed;
+    border-bottom: 1px solid $heiRed;
 }
 //profile info enter course button
 .dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover:not(:disabled), .dashboard .my-courses .course .info .enter-course:active:not(:disabled), .dashboard .my-courses .course .info .enter-course:focus:not(:disabled) {
@@ -955,6 +956,14 @@ body.discussion .course-tabs .right .new-post-btn {
 .forum-new-post-form .post-option.is-enabled, .edit-post-form .post-option.is-enabled {
     border-color: $heiRed;
     color: $heiRed;
+}
+
+.forum-nav-thread.is-unread .forum-nav-thread-comments-count::after {
+    border-right-color: $heiRed;
+}
+
+.forum-nav-thread.is-unread .forum-nav-thread-comments-count {
+    background-color: $heiRed;
 }
 
 .container .discussion-body .discussion-submit-post, .container .discussion-module .discussion-submit-post, .container .discussion-user-threads .discussion-submit-post {
