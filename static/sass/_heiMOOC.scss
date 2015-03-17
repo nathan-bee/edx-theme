@@ -440,12 +440,9 @@ color: white;
 //course profile
 .heiCourseProfile {
     display: flex;
+    justify-content: space between;
 }
 
-.heiCourseProfile .media {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .heiCourseProfile .media .hero img {
     height: 200px;
@@ -931,11 +928,12 @@ body.discussion .course-tabs .right .new-post-btn {
     background: $heiBeige !important;
 }
 
-.forum-new-post-form .cancel {
+.forum-new-post-form .cancel, .forum-new-post-form .cancel:hover, .forum-new-post-form .cancel:active,, .forum-new-post-form .cancel:focus {
     background-color: $heiRed;
     background-image: none;
     border: none;
     border-radius: 0px;
+    color: white;
 }
 
 .forum-new-post-form .post-option.is-enabled, .edit-post-form .post-option.is-enabled {
