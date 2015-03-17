@@ -592,11 +592,11 @@ color: white;
 //
 
 .view-login .introduction {
-    background: $heiBeige;
+    background: none;
 }
 
 .view-login .container {
-    background: $heiBeige;
+    background: none;
 }
 
 .view-login .form-actions button {
@@ -605,7 +605,10 @@ color: white;
 }
 
 .view-login .content-wrapper {
-    margin-top: 15px;
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
+    background-size: auto auto;
+    background-position: center -60px;
+    background-repeat: no-repeat;
 }
 
 
@@ -631,11 +634,11 @@ color: white;
 
 //register form background
 .view-register .introduction {
-    background: $heiBeige;
+    background: none;
 }
 
 .view-register .container {
-    background: $heiBeige;
+    background: none;
 }
 
 .login-register .action-primary:hover, .login-register .action-primary:focus, .login-register .action-primary:active, .login-register .nav-btn:hover, .login-register .nav-btn:focus, .login-register .nav-btn:active {
@@ -648,7 +651,10 @@ color: white;
 }
 
 .view-register .content-wrapper {
-    margin-top: 15px;
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
+    background-size: auto auto;
+    background-position: center -60px;
+    background-repeat: no-repeat;
 }
 
 .register form .field textarea {
@@ -979,7 +985,6 @@ body.discussion .course-tabs .right .new-post-btn {
 
 body.discussion .post-label-following, .discussion-module .post-label-following, .discussion-user-threads .post-label-following {
     border: 1px solid $heiRed;
-    color: $heiRed;
 }
 
 //xmodule button
