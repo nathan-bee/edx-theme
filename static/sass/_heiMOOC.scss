@@ -40,12 +40,14 @@ a, h1, h2, h3, span, li {
     font-family: $sans-serif;
     color: black;
     letter-spacing: 0.05em !important;
+    text-shadow: none !important;
 }
 
 p {
     font-family: $sans-serif !important;
     color: black;
     letter-spacing: 0.05em !important;
+    text-shadow: none !important;
 }
 
 //serif
@@ -979,6 +981,9 @@ section.wiki .btn, section.wiki .btn:focus:not(:disabled), section.wiki .btn:act
     background-color: $heiRed !important;
     color: white !important;
     background-image: none !important;
+    border-radius: 0px !important;
+    text-shadow: none !important;
+    letter-spacing: 0.05em !important;
 }
 
 section.wiki .nav-tabs li.active a {
