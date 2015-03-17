@@ -948,12 +948,14 @@ body.discussion .course-tabs .right .new-post-btn {
     background-color: $heiRed;
     border: 1px solid $heiRed;
     box-shadow: none;
+    background-image: url('../themes/heiMOOC/images/heiMOOC_arrow_left.png');
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button.button-next {
     background-color: $heiRed;
     border: 1px solid $heiRed;
     box-shadow: none;
+    background-image: url('../themes/heiMOOC/images/heiMOOC_arrow_right.png');
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button.disabled {
