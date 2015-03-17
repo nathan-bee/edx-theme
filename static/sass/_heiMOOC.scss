@@ -969,20 +969,20 @@ section.wiki .wiki-wrapper {
 }
 
 section.wiki .wiki-wrapper > header {
-    border-radius: 0;
-    background-color: $heiBeige;
+    border-radius: 0  !important;
+    background-color: $heiBeige !important;
 }
 
 section.wiki .btn, section.wiki .btn:focus:not(:disabled), section.wiki .btn:active:not(:disabled), , section.wiki .btn:hover:not(:disabled) {
-    border: none;
-    box-shadow: none;
-    background-color: $heiRed;
-    color: white;
-    background-image: none;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: $heiRed !important;
+    color: white !important;
+    background-image: none !important;
 }
 
 section.wiki .nav-tabs li.active a {
-    background-color: $heiLightGrey;
+    background-color: $heiLightGrey !important;
 }
 
 /****************************************************************************************************
