@@ -76,6 +76,17 @@ input[type="button"] {
     box-shadow: none !important;
 }
 
+input[type="submit"], input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: $heiRed !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
 input[type="button"]:disabled {
     opacity: 1;
 }
@@ -901,7 +912,7 @@ div.course-wrapper section.course-content .xblock {
 //
 
 //Discussion Module
-.discussion-module .new-post-btn, .discussion-user-threads .new-post-button {
+.discussion-module .new-post-btn, .discussion-module .new-post-btn:focus, .discussion-module .new-post-btn:active, .discussion-module .new-post-btn:hover, .discussion-user-threads .new-post-btn, .discussion-user-threads .new-post-btn:hover, .discussion-user-threads .new-post-btn:active, .discussion-user-threads .new-post-btn:focus {
     background-color: $heiRed;
     background-image: none;
     border: none;
@@ -918,6 +929,18 @@ body.discussion .course-tabs .right .new-post-btn {
 
 .discussion-module, .discussion-user-threads {
     background: $heiBeige !important;
+}
+
+.forum-new-post-form .cancel {
+    background-color: $heiRed;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.forum-new-post-form .post-option.is-enabled, .edit-post-form .post-option.is-enabled {
+    border-color: $heiRed;
+    color: $heiRed;
 }
 
 
