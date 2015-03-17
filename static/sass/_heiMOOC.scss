@@ -164,7 +164,7 @@ header.global .nav-seperator {
 //
 
 //Background image home
-.highlighted-courses .courses {
+.highlighted-courses {
     background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     min-height: 640px;
@@ -174,7 +174,7 @@ header.global .nav-seperator {
 }
 
 //Background image courses
-.find-courses .courses {
+.find-courses {
     background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
     background-size: auto auto;
     min-height: 850px;
@@ -213,7 +213,7 @@ header.search {
 .content-wrapper {
     width: 100%;
     margin: 0px auto;
-    background: none repeat scroll 0% 0% white !important;
+    background: none;
     padding-bottom: 0px !important;
 }
 
@@ -605,10 +605,11 @@ color: white;
 }
 
 .view-login .content-wrapper {
-    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
-    background-size: auto auto;
-    background-position: center -60px;
-    background-repeat: no-repeat;
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png') !important;
+    background-size: auto auto !important;
+    background-position: center -70px !important;
+    background-repeat: no-repeat !important;
+    min-height: 900px !important;
 }
 
 
@@ -652,9 +653,10 @@ color: white;
 
 .view-register .content-wrapper {
     background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
-    background-size: auto auto;
-    background-position: center -60px;
-    background-repeat: no-repeat;
+    background-size: auto auto !important;
+    background-position: center -70px !important;
+    background-repeat: no-repeat !important;
+    min-height: 900px;
 }
 
 .register form .field textarea {
