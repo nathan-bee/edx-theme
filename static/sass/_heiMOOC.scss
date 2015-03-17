@@ -673,6 +673,10 @@ color: white;
 }
 
 //Header
+header.global .user .dropdown-menu li > a:hover, header.global .user .dropdown-menu li > a:active, header.global .user .dropdown-menu li > a:focus {
+    color: $heiRed;
+}
+
 header.global.slim h2 {
     color: white !important;
 }
@@ -945,6 +949,38 @@ body.discussion .course-tabs .right .new-post-btn {
     color: $heiRed;
 }
 
+.container .discussion-body .discussion-submit-post, .container .discussion-module .discussion-submit-post, .container .discussion-user-threads .discussion-submit-post {
+    background-color: $heiRed;
+    background-image: none;
+    border-radius: 0px;
+    border: none;
+}
+
+.container .discussion-body .discussion-submit-post:hover, .container .discussion-module .discussion-submit-post:hover, .container .discussion-user-threads .discussion-submit-post:hover, .container .discussion-body .discussion-submit-post:focus, .container .discussion-module .discussion-submit-post:focus, .container .discussion-user-threads .discussion-submit-post:focus {
+    background-color: $heiRed;
+    background-image: none;
+    border-radius: 0px;
+    border: none
+}
+
+.discussion.container .action-button.action-follow .action-label, .discussion-module .action-button.action-follow .action-label, .discussion-user-threads .action-button.action-follow .action-label {
+    color: $heiRed;
+}
+
+.discussion.container .action-button.action-follow.is-checked .action-icon, .discussion.container .action-button.action-follow:hover .action-icon, .discussion.container .action-button.action-follow:focus .action-icon, .discussion-module .action-button.action-follow.is-checked .action-icon, .discussion-user-threads .action-button.action-follow.is-checked .action-icon, .discussion-module .action-button.action-follow:hover .action-icon, .discussion-user-threads .action-button.action-follow:hover .action-icon, .discussion-module .action-button.action-follow:focus .action-icon, .discussion-user-threads .action-button.action-follow:focus .action-icon {
+    color: $heiRed;
+    background-color: $heiRed;
+    border: 1px solid $heiRed;
+}
+
+.discussion.container .action-button.action-follow:hover, .discussion.container .action-button.action-follow:focus, .discussion-module .action-button.action-follow:hover, .discussion-user-threads .action-button.action-follow:hover, .discussion-module .action-button.action-follow:focus, .discussion-user-threads .action-button.action-follow:focus {
+    border-color: $heiRed;
+}
+
+body.discussion .post-label-following, .discussion-module .post-label-following, .discussion-user-threads .post-label-following {
+    border: 1px solid $heiRed;
+    color: $heiRed;
+}
 
 //xmodule button
 .xmodule_display.xmodule_CapaModule div.problem div.action .show {
