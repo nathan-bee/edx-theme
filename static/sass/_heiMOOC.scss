@@ -980,6 +980,11 @@ section.wiki .btn, section.wiki .btn:focus:not(:disabled), section.wiki .btn:act
     color: white;
     background-image: none;
 }
+
+section.wiki .nav-tabs li.active a {
+    background-color: $heiLightGrey;
+}
+
 /****************************************************************************************************
 * Stanford Theming File
 *
