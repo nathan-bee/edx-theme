@@ -605,10 +605,11 @@ color: white;
 }
 
 .view-login .content-wrapper {
-    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
-    background-size: auto auto;
-    background-position: center -60px;
-    background-repeat: no-repeat;
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png') !important;
+    background-size: auto auto !important;
+    background-position: center -70px !important;
+    background-repeat: no-repeat !important;
+    min-height: 900px !important;
 }
 
 
@@ -651,10 +652,11 @@ color: white;
 }
 
 .view-register .content-wrapper {
-    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png');
-    background-size: auto auto;
-    background-position: center -60px;
-    background-repeat: no-repeat;
+    background-image: url('../themes/heiMOOC/images/MOOC_Background_seal_image.png') !important;
+    background-size: auto auto !important;
+    background-position: center -70px !important;
+    background-repeat: no-repeat !important;
+    min-height: 900px !important;
 }
 
 .register form .field textarea {
